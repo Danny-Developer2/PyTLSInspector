@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Informe PyTLSInspector — 127.0.0.1:62548</title>
+<style>
+:root{--bg:#0f1419;--panel:#171e26;--line:#263140;--fg:#e6edf3;--muted:#8b98a5;--accent:#3ddc97;--warn:#f0b429;--bad:#ef5350;--info:#58a6ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.55;font-size:15px}
+main{max-width:1100px;margin:0 auto;padding:32px 20px 64px}
+h1{font-size:26px;margin:0 0 4px}
+h2{font-size:19px;margin:32px 0 12px;border-bottom:1px solid var(--line);padding-bottom:6px}
+h3{font-size:16px;margin:24px 0 8px}
+.sub{color:var(--muted);font-size:13px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:20px 0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px}
+.card .num{font-size:26px;font-weight:700}
+.card .lbl{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.06em}
+.sev-confirmado{color:var(--bad)}.sev-probable{color:var(--warn)}.sev-potencial{color:var(--info)}.sev-indicio{color:var(--muted)}.sev-recomendacion{color:var(--accent)}
+table{width:100%;border-collapse:collapse;margin-top:8px;font-size:14px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--muted);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.05em}
+tr:hover td{background:rgba(255,255,255,.02)}
+.badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px;border:1px solid var(--line)}
+.finding{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;margin:12px 0}
+.finding h3{margin:0 0 6px;font-size:16px}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px}
+.evidence{background:rgba(88,166,255,.07);border-left:3px solid var(--info);padding:8px 12px;margin:8px 0;font-size:13px}
+.reco{background:rgba(61,220,151,.07);border-left:3px solid var(--accent);padding:8px 12px;margin:8px 0;font-size:13px}
+.ok{color:var(--accent)}.bad{color:var(--bad)}.warn{color:var(--warn)}
+.foot{margin-top:40px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:12px}
+</style>
+</head>
+<body>
+<main>
+  <h1>Informe de auditoría SSL/TLS</h1>
+  <p class="sub">
+    Herramienta: <strong>PyTLSInspector</strong> v1.0.0
+    &middot; Objetivo: <span class="mono">127.0.0.1:62548</span>
+    
+  </p>
+  <p class="sub">
+    Inicio: 2026-11-06 04:57:02 &middot;
+    Fin: 2026-11-06 04:57:02 &middot;
+    Duración: 0.10 s
+    &middot; Conexión:
+    <span class="ok">establecida</span>
+    
+    
+    &middot; Protocolo negociado: <span class="mono">TLSv1.3</span>
+    
+    
+    &middot; Cifrado negociado: <span class="mono">TLS_AES_256_GCM_SHA384</span>
+    
+  </p>
+
+  <div class="cards">
+    <div class="card"><div class="num sev-confirmado">0</div><div class="lbl">Confirmados</div></div>
+    <div class="card"><div class="num sev-probable">3</div><div class="lbl">Probables</div></div>
+    <div class="card"><div class="num sev-potencial">0</div><div class="lbl">Potenciales</div></div>
+    <div class="card"><div class="num sev-indicio">0</div><div class="lbl">Indicios</div></div>
+    <div class="card"><div class="num sev-recomendacion">0</div><div class="lbl">Recomendaciones</div></div>
+  </div>
+
+  
+  <h2>Certificado</h2>
+  
+  <div class="cards">
+    <div class="card"><div class="num">CN=localhost</div><div class="lbl">Sujeto</div></div>
+    <div class="card"><div class="num">CN=localhost</div><div class="lbl">Emisor</div></div>
+    <div class="card"><div class="num">2048 bits</div><div class="lbl">Clave (RSAPublicKey)</div></div>
+    <div class="card"><div class="num">364</div><div class="lbl">Días hasta caducar</div></div>
+    <div class="card"><div class="num">1</div><div class="lbl">Certificados en cadena</div></div>
+  </div>
+  <table>
+    <tbody>
+      <tr><th>Sujeto</th><td class="mono">CN=localhost</td></tr>
+      <tr><th>Emisor</th><td class="mono">CN=localhost</td></tr>
+      <tr><th>Nombre común</th><td class="mono">localhost</td></tr>
+      <tr><th>Válido desde</th><td class="mono">2026-11-05 04:57:01 UTC</td></tr>
+      <tr><th>Válido hasta</th><td class="mono">2027-11-06 04:57:01 UTC</td></tr>
+      <tr><th>Algoritmo de firma</th><td class="mono">sha256WithRSAEncryption</td></tr>
+      <tr><th>Nombres alternativos (DNS)</th><td class="mono">localhost</td></tr>
+      <tr><th>Nombres alternativos (IP)</th><td class="mono">—</td></tr>
+      <tr><th>Número de serie</th><td class="mono">6bf9cd003b030534cec2be99146608d3bcccf6a7</td></tr>
+      <tr><th>Huella SHA-256</th><td class="mono">b06ccfd8ec4cb8cab9469edc2316a92abd2a75047fe90a5f3aae9431ee4ccacb</td></tr>
+      <tr><th>Autofirmado</th><td>Sí</td></tr>
+      <tr><th>Cadena de confianza</th><td>
+        <span class="bad">No validada</span>
+        <div class="mono sub">[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1147)</div>
+        
+      </td></tr>
+    </tbody>
+  </table>
+  
+
+  <h2>Hallazgos</h2>
+  
+    
+    <div class="finding">
+      <h3><span class="badge sev-probable">probable</span>
+          Certificado autofirmado</h3>
+      <p class="sub">Categoría: confianza · ID: <span class="mono">certificate_self_signed</span></p>
+      <p>El certificado ha sido firmado por sí mismo y no proviene de una autoridad de certificación de confianza pública.</p>
+      <div class="evidence"><strong>Evidencia:</strong> Subject e Issuer coinciden: CN=localhost</div>
+      <div class="reco"><strong>Recomendación:</strong> Usa un certificado emitido por una CA de confianza o instala tu CA interna en los clientes.</div>
+      <p class="sub">Referencias: <span class="mono">https://docs.python.org/3/library/ssl.html</span></p>
+    </div>
+    
+    <div class="finding">
+      <h3><span class="badge sev-probable">probable</span>
+          El certificado no cubre el nombre de host</h3>
+      <p class="sub">Categoría: hostname · ID: <span class="mono">hostname_mismatch</span></p>
+      <p>El nombre de host consultado no aparece en el Subject Alternative Name ni en el Common Name del certificado.</p>
+      <div class="evidence"><strong>Evidencia:</strong> Host: 127.0.0.1 · CN: localhost · SAN DNS: localhost</div>
+      <div class="reco"><strong>Recomendación:</strong> Emite un certificado que incluya el nombre de host utilizado.</div>
+      <p class="sub">Referencias: <span class="mono">https://datatracker.ietf.org/doc/html/rfc6125</span></p>
+    </div>
+    
+    <div class="finding">
+      <h3><span class="badge sev-probable">probable</span>
+          La cadena no se valida contra el almacén de confianza</h3>
+      <p class="sub">Categoría: cadena · ID: <span class="mono">chain_not_trusted</span></p>
+      <p>La cadena servida no termina en una autoridad de confianza reconocida, por lo que los clientes mostrarán advertencias.</p>
+      <div class="evidence"><strong>Evidencia:</strong> [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1147)</div>
+      <div class="reco"><strong>Recomendación:</strong> Sirve la cadena completa, incluido el certificado intermedio, emitido por una CA de confianza.</div>
+      <p class="sub">Referencias: <span class="mono">https://docs.python.org/3/library/ssl.html</span></p>
+    </div>
+    
+  
+
+  <h2>Protocolos</h2>
+  
+  <table>
+    <thead><tr><th>Protocolo</th><th>Habilitado</th><th>Estado</th></tr></thead>
+    <tbody>
+    
+      <tr>
+        <td class="mono">SSLv2</td>
+        <td><span class="ok">No</span></td>
+        <td><span class="ok">Obsoleto y deshabilitado</span>
+            </td>
+      </tr>
+    
+      <tr>
+        <td class="mono">SSLv3</td>
+        <td><span class="ok">No</span></td>
+        <td><span class="ok">Obsoleto y deshabilitado</span>
+            </td>
+      </tr>
+    
+      <tr>
+        <td class="mono">TLS 1.0</td>
+        <td><span class="ok">No</span></td>
+        <td><span class="ok">Obsoleto y deshabilitado</span>
+            </td>
+      </tr>
+    
+      <tr>
+        <td class="mono">TLS 1.1</td>
+        <td><span class="ok">No</span></td>
+        <td><span class="ok">Obsoleto y deshabilitado</span>
+            </td>
+      </tr>
+    
+      <tr>
+        <td class="mono">TLS 1.2</td>
+        <td><span class="bad">Sí</span></td>
+        <td><span class="ok">Recomendado</span></td>
+      </tr>
+    
+      <tr>
+        <td class="mono">TLS 1.3</td>
+        <td><span class="bad">Sí</span></td>
+        <td><span class="ok">Recomendado</span></td>
+      </tr>
+    
+    </tbody>
+  </table>
+  
+
+  <h2>Conjuntos de cifrado</h2>
+  
+  <table>
+    <thead><tr><th>Conjunto</th><th>Admitido</th><th>Fortaleza</th><th>Intercambio</th></tr></thead>
+    <tbody>
+    
+      <tr>
+        <td class="mono">TLS_AES_256_GCM_SHA384</td>
+        <td><span class="warn">Sí</span></td>
+        <td><span class="ok">Fuerte</span>
+            </td>
+        <td class="mono">ECDHE</td>
+      </tr>
+    
+      <tr>
+        <td class="mono">TLS_CHACHA20_POLY1305_SHA256</td>
+        <td><span class="warn">Sí</span></td>
+        <td><span class="ok">Fuerte</span>
+            </td>
+        <td class="mono">ECDHE</td>
+      </tr>
+    
+      <tr>
+        <td class="mono">TLS_AES_128_GCM_SHA256</td>
+        <td><span class="warn">Sí</span></td>
+        <td><span class="ok">Fuerte</span>
+            </td>
+        <td class="mono">ECDHE</td>
+      </tr>
+    
+      <tr>
+        <td class="mono">ECDHE-RSA-AES256-GCM-SHA384</td>
+        <td><span class="warn">Sí</span></td>
+        <td><span class="ok">Fuerte</span>
+            </td>
+        <td class="mono">ECDHE</td>
+      </tr>
+    
+      <tr>
+        <td class="mono">ECDHE-RSA-AES128-GCM-SHA256</td>
+        <td><span class="warn">Sí</span></td>
+        <td><span class="ok">Fuerte</span>
+            </td>
+        <td class="mono">ECDHE</td>
+      </tr>
+    
+      <tr>
+        <td class="mono">ECDHE-RSA-CHACHA20-POLY1305</td>
+        <td><span class="warn">Sí</span></td>
+        <td><span class="ok">Fuerte</span>
+            </td>
+        <td class="mono">ECDHE</td>
+      </tr>
+    
+      <tr>
+        <td class="mono">DHE-RSA-AES256-GCM-SHA384</td>
+        <td>No</td>
+        <td>—</td>
+        <td class="mono">DHE</td>
+      </tr>
+    
+      <tr>
+        <td class="mono">DHE-RSA-AES128-GCM-SHA256</td>
+        <td>No</td>
+        <td>—</td>
+        <td class="mono">DHE</td>
+      </tr>
+    
+      <tr>
+        <td class="mono">ECDHE-RSA-AES256-SHA384</td>
+        <td>No</td>
+        <td>—</td>
+        <td class="mono">ECDHE</td>
+      </tr>
+    
+      <tr>
+        <td class="mono">ECDHE-RSA-AES128-SHA256</td>
+        <td>No</td>
+        <td>—</td>
+        <td class="mono">ECDHE</td>
+      </tr>
+    
+      <tr>
+        <td class="mono">AES256-GCM-SHA384</td>
+        <td>No</td>
+        <td>—</td>
+        <td class="mono">RSA</td>
+      </tr>
+    
+      <tr>
+        <td class="mono">AES128-GCM-SHA256</td>
+        <td>No</td>
+        <td>—</td>
+        <td class="mono">RSA</td>
+      </tr>
+    
+      <tr>
+        <td class="mono">AES256-SHA256</td>
+        <td>No</td>
+        <td>—</td>
+        <td class="mono">RSA</td>
+      </tr>
+    
+      <tr>
+        <td class="mono">AES128-SHA</td>
+        <td>No</td>
+        <td>—</td>
+        <td class="mono">RSA</td>
+      </tr>
+    
+      <tr>
+        <td class="mono">DES-CBC3-SHA</td>
+        <td>No</td>
+        <td>—</td>
+        <td class="mono">RSA</td>
+      </tr>
+    
+      <tr>
+        <td class="mono">RC4-SHA</td>
+        <td>No</td>
+        <td>—</td>
+        <td class="mono">RSA</td>
+      </tr>
+    
+      <tr>
+        <td class="mono">RC4-MD5</td>
+        <td>No</td>
+        <td>—</td>
+        <td class="mono">RSA</td>
+      </tr>
+    
+      <tr>
+        <td class="mono">EXP-RC4-MD5</td>
+        <td>No</td>
+        <td>—</td>
+        <td class="mono">RSA</td>
+      </tr>
+    
+      <tr>
+        <td class="mono">NULL-SHA256</td>
+        <td>No</td>
+        <td>—</td>
+        <td class="mono">RSA</td>
+      </tr>
+    
+      <tr>
+        <td class="mono">ECDHE-RSA-NULL-SHA</td>
+        <td>No</td>
+        <td>—</td>
+        <td class="mono">ECDHE</td>
+      </tr>
+    
+    </tbody>
+  </table>
+  
+
+  <div class="foot">
+    <p>Generado por PyTLSInspector v1.0.0. Informe de auditoría autorizada.
+    No incluye datos personales ni credenciales. Verifique siempre los hallazgos antes de
+    considerarlos definitivos.</p>
+  </div>
+</main>
+</body>
+</html>
